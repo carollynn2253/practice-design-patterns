@@ -16,13 +16,12 @@ public class Calculator {
         System.out.print("Please insert numberB: ");
         double numB = new Scanner(System.in).nextDouble();
 
-        System.out.print("Please insert SimpleFactory.operate.Operation (+, -, *, /): ");
+        System.out.print("Please insert operator (+, -, *, /): ");
         String oper = new Scanner(System.in).next();
 
         Operation operation = OperationFactory.createOperation(oper);
         operation.setNumberA(numA);
         operation.setNumberB(numB);
-
         System.out.print("Result: " + operation.getResult());
     }
 }
