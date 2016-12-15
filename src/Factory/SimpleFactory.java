@@ -1,5 +1,9 @@
 package Factory;
 
+import Factory.person.Nightingale;
+import Factory.person.Undergraduate;
+import Factory.person.Volunteer;
+
 /**
  * Created by chiu on 2016/12/15.
  */
@@ -13,7 +17,7 @@ public class SimpleFactory {
                 break;
 
             case 2:
-                nightingale = new Voluenteer();
+                nightingale = new Volunteer();
                 break;
         }
 
