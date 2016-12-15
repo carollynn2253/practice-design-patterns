@@ -1,5 +1,7 @@
 package SimpleFactory;
 
+import SimpleFactory.operate.Operation;
+
 import java.util.Scanner;
 
 /**
@@ -14,10 +16,10 @@ public class Calculator {
         System.out.print("Please insert numberB: ");
         double numB = new Scanner(System.in).nextDouble();
 
-        System.out.print("Please insert SimpleFactory.BaseOperation (+, -, *, /): ");
+        System.out.print("Please insert SimpleFactory.operate.Operation (+, -, *, /): ");
         String oper = new Scanner(System.in).next();
 
-        BaseOperation operation = OperationFactory.createOperation(oper);
+        Operation operation = OperationFactory.createOperation(oper);
         operation.setNumberA(numA);
         operation.setNumberB(numB);
 

@@ -1,9 +1,9 @@
-package SimpleFactory;
+package SimpleFactory.operate;
 
 /**
  * Created by chiu on 2016/12/15.
  */
-public abstract class BaseOperation {
+public abstract class Operation {
     private double numberA = 0;
     private double numberB = 0;
 
@@ -15,11 +15,11 @@ public abstract class BaseOperation {
         return numberB;
     }
 
-    void setNumberB(double value) {
+    public void setNumberB(double value) {
         this.numberB = value;
     }
 
-    void setNumberA(double value) {
+    public void setNumberA(double value) {
         this.numberA = value;
     }
 
