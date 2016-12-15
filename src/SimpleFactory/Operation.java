@@ -3,25 +3,36 @@ package SimpleFactory;
 /**
  * Created by chiu on 2016/12/15.
  */
-public abstract class Operation {
-    private double numberA = 0;
-    private double numberB = 0;
-
-    double getNumberA() {
-        return numberA;
+public class Operation {
+    public static class OperationAdd extends BaseOperation {
+        @Override
+        public double getResult() {
+            return this.getNumberA() + this.getNumberB();
+        }
     }
 
-    double getNumberB() {
-        return numberB;
+    public static class OperationSub extends BaseOperation {
+        @Override
+        public double getResult() {
+            return this.getNumberA() - this.getNumberB();
+        }
     }
 
-    void setNumberB(double value) {
-        this.numberB = value;
+    public static class OperationMul extends BaseOperation {
+        @Override
+        public double getResult() {
+            return this.getNumberA() * this.getNumberB();
+        }
     }
 
-    void setNumberA(double value) {
-        this.numberA = value;
+    public static class OperationDiv extends BaseOperation {
+        @Override
+        public double getResult() throws Exception {
+            if (this.getNumberB() != 0) {
+                return this.getNumberA() / this.getNumberB();
+            } else {
+                throw new Exception("NumberB can not be 0.");
+            }
+        }
     }
-
-    public abstract double getResult() throws Exception;
 }

@@ -13,7 +13,7 @@ public class Cashier {
         System.out.print("Please choose count type (1. normal  2. 20% off  3. 300 return 100): ");
         int type = new Scanner(System.in).nextInt();
 
-        CashSuper cashSuper = CashFactory.createCashAccept(type);
+        BaseCashSuper cashSuper = CashFactory.createCashAccept(type);
         System.out.print("Result Total: " + cashSuper.acceptCash(originPrice));
     }
 }
