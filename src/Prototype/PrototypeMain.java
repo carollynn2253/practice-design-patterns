@@ -16,5 +16,5 @@ public class PrototypeMain {
 
         resume.display();
         resume1.display();
-    }gi
+    }
 }
