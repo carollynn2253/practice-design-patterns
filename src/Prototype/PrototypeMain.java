@@ -10,7 +10,7 @@ public class PrototypeMain {
         resume.setPersonalInfo("Female", 20);
         resume.setWorkExperience("2015 ~ 2016", "Google");
 
-        Resume resume1 = (Resume) resume.clone();
+        Resume resume1 = resume.clone();
         resume1.setWorkExperience("2014 ~ 2016", "Yahoo");
 
         resume.display();
