@@ -11,6 +11,7 @@ public class PrototypeMain {
         resume.setWorkExperience("2015 ~ 2016", "Google");
 
         Resume resume1 = resume.clone();
+        resume1.setPersonalInfo("Female", 25);
         resume1.setWorkExperience("2014 ~ 2016", "Yahoo");
 
         resume.display();
