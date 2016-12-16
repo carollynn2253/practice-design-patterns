@@ -6,7 +6,6 @@ package Prototype;
 public class PrototypeMain {
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        //淺複製, will all display by last set
         Resume resume = new Resume("Ching Ting, Chiu");
         resume.setPersonalInfo("Female", 20);
         resume.setWorkExperience("2015 ~ 2016", "Google");
