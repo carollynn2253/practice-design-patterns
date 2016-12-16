@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  * Created by chiu on 2016/12/15.
  */
-public class Cashier {
+public class CashierMain {
     //simple factory, use CashSuper and CashFactory
 //    public static void main(String[] args) {
 //        System.out.print("Origin Total Price: ");

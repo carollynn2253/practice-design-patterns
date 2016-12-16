@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Created by chiu on 2016/12/15.
  */
-public class Calculator {
+public class CalculatorMain {
 
     public static void main(String[] args) throws Exception {
         System.out.print("Please insert numberA: ");
