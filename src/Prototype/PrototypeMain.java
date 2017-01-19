@@ -6,15 +6,19 @@ package Prototype;
 public class PrototypeMain {
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        Resume resume = new Resume("Ching Ting, Chiu");
-        resume.setPersonalInfo("Female", 20);
-        resume.setWorkExperience("2015 ~ 2016", "Google");
+        Resume resumeA = new Resume("Ching Ting, Chiu");
+        resumeA.setPersonalInfo("Female", 20);
+        resumeA.setWorkExperience("1999 ~ 2000", "X Company");
 
-        Resume resume1 = resume.clone();
-        resume1.setPersonalInfo("Female", 25);
-        resume1.setWorkExperience("2014 ~ 2016", "Yahoo");
+        Resume resumeB = resumeA.clone();
 
-        resume.display();
-        resume1.display();
+        //update resumeA
+        resumeA.setPersonalInfo("Female", 33);
+        resumeA.setWorkExperience("2014 ~ 2016", "Y Company");
+
+        System.out.println("======Resume A======");
+        resumeA.display();
+        System.out.println("\n======Resume B======");
+        resumeB.display();
     }
 }
