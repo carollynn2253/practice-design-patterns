@@ -32,7 +32,14 @@ public class Resume implements Cloneable {
     }
 
     @Override
-    protected Resume clone() throws CloneNotSupportedException {
-        return (Resume) super.clone();
+    protected Object clone() throws CloneNotSupportedException {
+        //shallow copy
+//        return super.clone();
+
+        //deep copy
+        Resume newResume = new Resume(name);
+        newResume.setPersonalInfo(gender, age);
+        newResume.setWorkExperience(duration, lastCompanyName);
+        return newResume;
     }
 }

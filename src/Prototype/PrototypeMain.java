@@ -10,15 +10,15 @@ public class PrototypeMain {
         resumeA.setPersonalInfo("Female", 20);
         resumeA.setWorkExperience("1999 ~ 2000", "X Company");
 
-        Resume resumeB = resumeA.clone();
+        Resume resumeB = (Resume)resumeA.clone();
+        resumeA.display();
+        resumeB.display();
 
         //update resumeA
-        resumeA.setPersonalInfo("Female", 33);
         resumeA.setWorkExperience("2014 ~ 2016", "Y Company");
 
-        System.out.println("======Resume A======");
+        System.out.println("\nAfter Change");
         resumeA.display();
-        System.out.println("\n======Resume B======");
         resumeB.display();
     }
 }
